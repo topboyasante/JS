@@ -42,7 +42,6 @@ let randomNumber = Math.floor(Math.random() * 8);
 let eightBall = '';
 // A variable for a random number, and an outcome in a string form.
 
-
 //Switch statements;
 switch(randomNumber){
   case 0:
@@ -77,3 +76,22 @@ switch(randomNumber){
 
 console.log(eightBall);
 
+//Race Day :
+let raceNumber = Math.floor(Math.random() * 1000);
+let registeredEarly = true;
+let runnerAge = 19;
+
+if(runnerAge >=18 && registeredEarly == true){
+  raceNumber+=1000;
+}
+
+if(runnerAge>=18 && registeredEarly== true){
+      console.log("You will race at 9:30AM. Here's your race number:" + raceNumber);
+}
+else if(runnerAge>=18 && registeredEarly == false){
+  console.log("You will race at 11:30AM. Here's your race number:" + raceNumber);
+}
+
+if(runnerAge<18){
+  console.log("You will race at 12:30PM.");
+}
