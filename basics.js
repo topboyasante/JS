@@ -26,4 +26,54 @@ myAgeInDogYears = earlyYears + laterYears;
 myName='Kwasi Asante'.toLowerCase();
 
 console.log(`My name is ${myName}. I am ${myAge} years old in human years
-whic is ${myAgeInDogYears} in Dog Years.`)
+which is ${myAgeInDogYears} in Dog Years.`)
+
+
+//Magic Eight Ball:
+let userName = 'Aaron';
+userName ? console.log(`Hello, ${userName}`) : console.log('Hello');
+//The above lines of code take the user's name , and displays it in a greeting.
+
+let userQuestion = 'Will I Fall In Love?';
+userQuestion ? console.log(`${userName}, You're Asking: ${userQuestion}`) : console.log("You didn't ask a Question.");
+//Takes user input and asks it in a question.
+
+let randomNumber = Math.floor(Math.random() * 8);
+let eightBall = '';
+// A variable for a random number, and an outcome in a string form.
+
+
+//Switch statements;
+switch(randomNumber){
+  case 0:
+   eightBall = 'It is certain';
+   break;
+   case 1:
+    eightBall = 'It is decidedly so';
+    break;
+    case 2:
+      eightBall = 'Reply hazy try again';
+      break;
+      case 3:
+        eightBall = 'Cannot predict now';
+        break;
+        case 4:
+          eightBall = 'Do not count on it';
+          break;
+          case 5:
+            eightBall = 'My sources say no';
+            break;
+            case 6:
+              eightBall = 'Outlook not so good';
+              break;
+              case 7:
+                eightBall = 'Signs point to yes';
+                break;
+
+                default:
+                  eightBall = 'hmmm.. try again';
+                  break;
+}
+
+console.log(eightBall);
+
