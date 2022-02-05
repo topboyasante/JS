@@ -95,3 +95,33 @@ else if(runnerAge>=18 && registeredEarly == false){
 if(runnerAge<18){
   console.log("You will race at 12:30PM.");
 }
+
+//Compound Interest:
+
+//State Variable
+let amount;
+let principalValue = 9990;
+let rate = 5;
+let nOC = 3;
+let time = 5;
+
+amount = principalValue *(Math.pow(1+rate/nOC, nOC*time))
+console.log(amount);
+
+if(principalValue>= 1000){
+    eiYouHaveMoney();
+}
+function eiYouHaveMoney(){
+  console.log("EI YOU HAVE MONEY O!");
+}
+
+//Area of A Circle
+const pi = 3.14;
+
+function calculateArea(radius){
+  let area = pi*(radius*radius);
+  return area;
+}
+
+console.log(calculateArea(10));
+
