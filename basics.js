@@ -125,3 +125,11 @@ function calculateArea(radius){
 
 console.log(calculateArea(10));
 
+//Voulme of A Sphere:
+
+function calculateVolume(radius){
+  let volume = 4/3 *(Math.pow(pi*radius),3);
+  return volume;
+}
+
+console.log(calculateVolume(20));
